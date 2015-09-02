@@ -1,0 +1,36 @@
+<div class="row">
+<div class="form-group">
+    <label class="col-sm-1 control-label" for="Question1">Question2</label>
+    </div>
+    <div class="form-group">
+    <div class="col-md-9">
+     <div id="question1">
+        <label class="form-control"  class="form-control" name="question" ng-model="formData.question" >{{formData.question}}</label>        
+    </div>
+     </div>
+</div>        
+<div class="form-group" data-ng-init="init()" >
+<div>
+</div>
+</div>
+<div class="form-group">
+    <label class="col-sm-1 control-label" for="Answer1">Answer2</label>
+</div>
+<div class="form-group">    
+    <div ng-repeat="answer in formData.AnswersOfQuestion">
+        <input type="checkbox" ng-model="answer.DisplayValue"/>
+        <input type="text" ng-model="answer.answer" />    
+    </div>
+</div>
+
+<div class="form-group row">
+<div class="col-xs-6 col-xs-offset-3">
+    <a  ng-click="nextQuestion()" ui-sref="form.quiz3"  class="btn btn-block btn-info">
+    Submit Answer <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+</div>
+</div>
+
+
+
+</div>

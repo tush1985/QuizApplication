@@ -1,0 +1,154 @@
+﻿<div class="jumbotron">    
+    <p class="lead">Multiple choice Quiz application </p>    
+</div>
+<div class="row">
+    <h5>Tables for Quiz Application</h5>
+    <div class="col-md-4">
+        <h6>User</h6>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>UserName</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>admin</td>
+                    <td>admin</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-3">
+        <h6>Question</h6>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>question</th>                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>what is an angular</td>                    
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>What is MVC stands for</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+    <div class="col-md-4">
+        <h6>UserQuestion[Assign serires of questions to user]</h6>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Answered</th>
+                    <th>UserID</th>
+                    <th>QuestionID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>False</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>False</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-6">
+        <h6>AnswersByQuestion[One Question has many Answer]</h6>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>answer</th>
+                    <th>CorrectAnswer</th>
+                    <th>DisplayValue</th>
+                    <th>QuestionID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <th>FrameWork</th>
+                    <th>True</th>
+                    <th>False</th>
+                    <th>1</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>Library</th>
+                    <th>False</th>
+                    <th>False</th>
+                    <th>1</th>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <th>Model Controller View</th>
+                    <th>False</th>
+                    <th>False</th>
+                    <th>2</th>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <th>Model View Controller</th>
+                    <th>True</th>
+                    <th>False</th>
+                    <th>2</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-6">
+        <h6>UserAnswer[User can select Multiple Answer for a Single Question]</h6>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>UserID</th>
+                    <th>UserQuestionID</th>
+                    <th>AnswerByQuestionID</th>
+                    <th>AnswerDateTime</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>2015-09-02 15:41:23.377</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>1</th>
+                    <th>2015-09-02 15:41:23.377</th>
+                </tr>                
+                <tr>
+                    <th>3</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>4</th>
+                    <th>2015-09-02 15:41:23.478</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
